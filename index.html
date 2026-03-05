@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Test Tap Frog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="x-ogp-key" content="YOUR_KEY_HERE">
+<title>Tap Frog Game</title>
+<script src="https://sdk.play.fun"></script>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Test file created from SSH</h1>
-  <p>This file was pushed to check git authentication.</p>
+<div id="gameContainer">
+  <canvas id="gameCanvas"></canvas>
+  <div id="ui">
+    <div id="points">Points: <span id="pointsCount">0</span></div>
+    <div id="boost" class="hidden">BOOST x2!</div>
+    <button id="claimBtn">Claim Rewards</button>
+  </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
